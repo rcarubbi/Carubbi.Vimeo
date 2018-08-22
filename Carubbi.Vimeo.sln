@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carubbi.Vimeo", "Carubbi.Vimeo\Carubbi.Vimeo.csproj", "{AC5F0878-F235-4558-A8A1-0242B619E666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5F0878-F235-4558-A8A1-0242B619E666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5F0878-F235-4558-A8A1-0242B619E666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5F0878-F235-4558-A8A1-0242B619E666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5F0878-F235-4558-A8A1-0242B619E666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F378538D-21C1-4748-8F9E-47B033479864}
+	EndGlobalSection
+EndGlobal
