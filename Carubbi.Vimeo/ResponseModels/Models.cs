@@ -3,20 +3,7 @@ using System.Collections.Generic;
 
 namespace Carubbi.Vimeo.ResponseModels
 {
-    
 
-    public class Tag
-    {
-        public string uri { get; set; }
-        public string name { get; set; }
-        public string tag { get; set; }
-        public string canonical { get; set; }
-        public Metadata metadata { get; set; }
-        public string resource_key { get; set; }
-    }
-
-   
-    
     public class Paging
     {
         public string next { get; set; }
@@ -717,11 +704,25 @@ namespace Carubbi.Vimeo.ResponseModels
         public List<Datum> data { get; set; }
     }
 
+    public class Download
+    {
+        public string quality { get; set; }
+        public string type { get; set; }
+        public int width { get; set; }
+        public int height { get; set; }
+        public DateTime expires { get; set; }
+        public string link { get; set; }
+        public DateTime created_time { get; set; }
+        public double fps { get; set; }
+        public int size { get; set; }
+        public string md5 { get; set; }
+    }
+
     public class VideoRootObject
     {
         public string uri { get; set; }
         public string name { get; set; }
-        public string description { get; set; }
+        public object description { get; set; }
         public string link { get; set; }
         public int duration { get; set; }
         public int width { get; set; }
@@ -735,16 +736,33 @@ namespace Carubbi.Vimeo.ResponseModels
         public object license { get; set; }
         public Privacy privacy { get; set; }
         public Pictures pictures { get; set; }
-        public List<Tag> tags { get; set; }
+        public List<object> tags { get; set; }
         public Stats stats { get; set; }
-        public Metadata2 metadata { get; set; }
+        public Metadata metadata { get; set; }
         public User user { get; set; }
+        public DateTime last_user_action_event_date { get; set; }
+        public List<File> files { get; set; }
+        public List<Download> download { get; set; }
         public App app { get; set; }
         public string status { get; set; }
         public string resource_key { get; set; }
         public Upload upload { get; set; }
         public Transcode transcode { get; set; }
         public string review_link { get; set; }
-        public object embed_presets { get; set; }
+        public EmbedPresets embed_presets { get; set; }
+    }
+
+    public class File
+    {
+        public string quality { get; set; }
+        public string type { get; set; }
+        public int width { get; set; }
+        public int height { get; set; }
+        public string link { get; set; }
+        public DateTime created_time { get; set; }
+        public double fps { get; set; }
+        public int size { get; set; }
+        public string md5 { get; set; }
+        public string link_secure { get; set; }
     }
 }

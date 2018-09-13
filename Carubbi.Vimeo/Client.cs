@@ -36,7 +36,7 @@ namespace Carubbi.Vimeo
 
         public string GetDownloadLink(long videoId)
         {
-            return Video(videoId).link;
+            return Video(videoId).download[0].link;
         }
     }
 }
